@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../style/cadastro.css">
+    <link rel="icon" href="../img/icon.svg">
+</head>
+
+<body>
+    <main class="container">
+        <form action="../php/cadastro.php" method="POST">
+            <h2>Recebimento de reclamações</h2>
+            <br>
+            <label for="txtName">Nome: </label>
+            <input type="text" name="txtName" id="txtName" required>
+            <br>
+
+            <label for="txtEmail">E-mail: </label>
+            <input type="email" name="txtEmail" id="txtEmail" required>
+            <br>
+            <label for="slctMateria">Máteria: </label>
+            <select name="slctMateria" id="slctMateria">
+                <option value="Programação para web">Programação para web</option>
+                <option value="Projeto integrador">Projeto integrador</option>
+                <option value="Rede de computadores">Rede de computadores</option>
+                <option value="Português">Português</option>
+                <option value="inglês">inglês</option>
+                <option value="Física">Física</option>
+                <option value="História">História</option>
+                <option value="Geografia">Geografia</option>
+                <option value="Biologia">Biologia</option>
+                <option value="Matemática">Matemática</option>
+                <option value="Sociologia">Sociologia</option>
+            </select>
+            <br>
+            <label for="textaReclamacao">Escreva a reclamação: </label>
+            <br>
+            <textarea name="textaReclamacao" id="textaReclamacao" rows="5" cols="33" minlength="10" maxlength="400"
+                required></textarea>
+            <br>
+            <input type="submit" value="Enviar" class="raise">
+        </form>
+
+        <br>
+
+        <a href="../php/index.php">Ir para a Página principal</a>
+
+    </main>
+
+</body>
+
+</html>

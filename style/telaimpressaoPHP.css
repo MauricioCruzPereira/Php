@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;600&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #00ffcc, #3366ff);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: #f2f2f2;
+    min-width: 400px;
+    min-height: 400px;
+    padding: 4rem;
+    box-shadow: 40px -16px #66ffff;
+    border-radius: 8px;
+}
+
+main.container p{
+    font-size: 1.5rem;
+}
+
+main.container a{
+    font-size: 1.3rem;
+}
+
+main.container h2{
+    font-weight: 600;
+    margin-bottom: 3rem;
+    position: relative;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    bottom: 11px;
+    left: 1;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+main.container h2{
+    background: linear-gradient(to left, #ff66cc, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-top: -15px;
+}
+
+main.container h2:hover{
+    background: linear-gradient(to left, #0000ff,#ff66cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-top: -15px;
+}
+
+main.container a{
+    clear:both;
+    border-radius: 3px;
+    padding:20px 60px; 
+    display:inline-block; 
+    margin:0; 
+    transition:all 0.8s, color 0.3s 0.3s;
+    background:#0099ff; 
+    color:#333;
+    text-decoration: none;
+}
+
+main.container a:hover{
+    color:#fff;
+}
+
+.btn-special4:hover{
+    box-shadow: 0 80px 0 0  rgba(0,0,0,0.25) inset,
+     0 -80px 0 0  rgba(0,0,0,0.25) inset;
+}
+
+@media (max-width: 680px) {
+    main.container {
+        min-width:100vw;
+        min-height:100vh;
+        padding: 1.3rem;   
+    }
+
+    main.container h2{
+        margin-bottom: 1.3rem;
+        margin-top: 1rem;
+        font-size: 1.3rem; 
+        margin-left: 5.5rem;
+    }
+
+    main h2::before {
+        bottom: 1px;
+    }
+
+    main.container label{
+        font-size: 1.8rem;
+    }
+
+    main.container input,select{
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+    }
+
+    main.container textarea{
+        font-size: 0.9rem;
+    }
+
+    main.container input[type="submit"]{
+        width: 10rem;
+        height: 5   rem;
+        font-size: 1.8rem;
+        margin-top: 10px;
+        margin-bottom: -5px;
+        margin-left: 4.5rem;
+        font-weight: 600;
+    }
+
+    main.container a{
+        font-size: 0.8rem;
+        margin-top: 3rem;
+    }
+
+    main.container img{
+        width: 90vw;
+        height: 45vh;
+    }
+}
